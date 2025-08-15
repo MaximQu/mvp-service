@@ -13,9 +13,9 @@ const Hero = () => {
             <span className="block">Washer, Dryer, Oven, Fridge?</span>
             We’ll Fix It —All , Flat Rate, No Hassle!
           </p>
-          <button className="btn btn-xl btn-primary text-xl sm:max-w-3xs w-full rounded-full">
+          <a href="#bookService" className="btn btn-xl btn-primary text-xl sm:max-w-3xs w-full rounded-full">
             Book service
-          </button>
+          </a>
         </div>
       </div>
     </section>
