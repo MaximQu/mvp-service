@@ -25,12 +25,14 @@ const navData = [
   },
 ];
 
+import logo from "../../assets/logo.jpg";
+
 const Header = () => {
   return (
     <header className="py-2 bg-blue-900 sticky top-0">
       <div className="container mx-auto flex items-center justify-center gap-8 ">
         <a className="w-32" href="#">
-          <img src="./public/logo.jpg" alt="AppliFix" />
+          <img src={logo} alt="AppliFix" />
         </a>
         <nav className="">
           <ul className="flex gap-8">
