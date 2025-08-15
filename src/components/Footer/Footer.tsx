@@ -5,7 +5,7 @@ const Footer = () => {
         <a className="" href="">
           Privacy Policy
         </a>
-        <p className="">Copyright © 2025 Dnipro Appliance LLC</p>
+        <p className="">Copyright © 2025 AppliFix</p>
       </div>
     </footer>
   );

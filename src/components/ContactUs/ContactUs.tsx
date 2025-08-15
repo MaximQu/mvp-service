@@ -10,7 +10,7 @@ const ContactUs = () => {
           data-lang="en"
           data-autoresize="0"
           data-showsidebar="1"
-          style={{ minWidth: "320px", height: "768px" }}
+          style={{ minWidth: "320px", height: "880px" }}
         ></div>
         <script
           type="text/javascript"

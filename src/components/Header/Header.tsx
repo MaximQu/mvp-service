@@ -29,8 +29,8 @@ const Header = () => {
   return (
     <header className="py-2 bg-blue-900 sticky top-0">
       <div className="container mx-auto flex items-center justify-center gap-8 ">
-        <a className="" href="#">
-          <img src="https://placehold.co/150x40" alt="" />
+        <a className="w-32" href="#">
+          <img src="/logo.jpg"  alt="" />
         </a>
         <nav className="">
           <ul className="flex gap-8">

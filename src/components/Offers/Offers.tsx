@@ -1,23 +1,23 @@
 const offersData = [
   {
-    icon: "",
     title: "Washers / Dryers",
+    url: "https://dniproappliance.com/wp-content/uploads/2025/07/washing-machine_5064735_-450x450.png",
   },
   {
-    icon: "",
     title: "Refrigerators",
+    url: "https://dniproappliance.com/wp-content/uploads/2025/07/refrigerator_5064698_-450x450.png",
   },
   {
-    icon: "",
     title: "Stove / Cooktop",
+    url: "https://dniproappliance.com/wp-content/uploads/2025/07/stove_7_-450x450.png",
   },
   {
-    icon: "",
     title: "Oven / Range",
+    url: "https://dniproappliance.com/wp-content/uploads/2025/07/oven_5064684_-450x450.png",
   },
   {
-    icon: "",
     title: "Dishwashers",
+    url: "https://dniproappliance.com/wp-content/uploads/2025/07/dishwasher_5064595_-1-450x450.png",
   },
 ];
 
@@ -32,10 +32,9 @@ const Offers = () => {
           We provide expert repair services for:
         </p>
         <ul className="flex gap-4 justify-between">
-          {offersData.map(({ icon, title }) => (
+          {offersData.map(({ title, url }) => (
             <li key={title} className="flex flex-col gap-8 items-center">
-              {icon}
-              <img src="https://placehold.co/140" alt="" />
+              <img src={url} alt={title} />
               <span className="">{title}</span>
             </li>
           ))}

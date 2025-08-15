@@ -7,7 +7,6 @@ import {
   Header,
   Hero,
   Offers,
-  ServiceArea,
 } from "./components";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <ContactInfo />
         <AboutUs />
         <Advantages />
-        <ServiceArea />
         <ContactUs />
       </main>
       <Footer />
