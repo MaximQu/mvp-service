@@ -19,8 +19,8 @@ const advantagesData = [
 
 const Advantages = () => {
   return (
-    <section className="py-32" id="whyUs">
-      <div className="container mx-auto">
+    <section className="py-[clamp(3rem,1.1707rem+7.8049vw,8rem)]" id="whyUs">
+      <div className="container px-4 mx-auto">
         <h2 className="text-center text-5xl font-medium mb-12">Why us?</h2>
         <ul className="flex flex-wrap justify-center gap-4 mb-8">
           {advantagesData.map(({ title, description }) => (
@@ -35,11 +35,11 @@ const Advantages = () => {
             </li>
           ))}
         </ul>
-        <div className="flex justify-center gap-4 uppercase">
-          <button className="btn btn-circle w-full max-w-3xs p-4 text-2xl">
+        <div className="flex flex-wrap justify-center gap-4 uppercase">
+          <button className="rounded-full bg-blue-950 w-full sm:max-w-3xs p-4 text-2xl max-w-full">
             Book service
           </button>
-          <button className="btn btn-circle w-full max-w-3xs p-4 text-2xl">
+          <button className="rounded-full bg-blue-950 w-full sm:max-w-3xs p-4 text-2xl max-w-full">
             Quick call
           </button>
         </div>

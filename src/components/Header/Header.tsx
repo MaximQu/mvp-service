@@ -25,16 +25,17 @@ const navData = [
   },
 ];
 
-import logo from "../../assets/logo.jpg";
-
 const Header = () => {
   return (
     <header className="py-2 bg-blue-900 sticky top-0">
-      <div className="container mx-auto flex items-center justify-center gap-8 ">
+      <div className="container px-4 mx-auto flex items-center justify-between gap-8">
         <a className="w-32" href="#">
-          <img src={logo} alt="AppliFix" />
+          <img
+            src="https://rogaicopita.trafft.com/api/v1/public/media/a9a46b78-0230-4cac-bd56-5727044d0a69?size=medium-small"
+            alt="AppliFix"
+          />
         </a>
-        <nav className="">
+        <nav className=" hidden lg:block">
           <ul className="flex gap-8">
             {navData.map(({ title, scrollTo }) => (
               <li key={title} className="capitalize text-xl">
@@ -43,7 +44,9 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <button className="btn rounded-full">Call us</button>
+        <a href='#bookService' className="rounded-full text-center bg-blue-950 w-full max-w-30 p-2 text-md ">
+          Call us
+        </a>
       </div>
     </header>
   );

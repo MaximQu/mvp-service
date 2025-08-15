@@ -23,19 +23,19 @@ const offersData = [
 
 const Offers = () => {
   return (
-    <section className="py-32 bg-white text-black" id="services">
-      <div className="container mx-auto">
+    <section className="py-[clamp(3rem,1.1707rem+7.8049vw,8rem)] bg-white text-black" id="services">
+      <div className="container px-4 mx-auto">
         <h2 className="text-center capitalize mb-4 text-5xl font-medium">
           What We Offer
         </h2>
         <p className="text-center mb-8">
           We provide expert repair services for:
         </p>
-        <ul className="flex gap-4 justify-between">
+        <ul className="flex gap-4 flex-wrap lg:justify-between justify-evenly ">
           {offersData.map(({ title, url }) => (
-            <li key={title} className="flex flex-col gap-8 items-center">
+            <li key={title} className="flex max-w-32 lg:max-w-40 flex-col gap-8 items-center">
               <img src={url} alt={title} />
-              <span className="">{title}</span>
+              <span className="font-medium">{title}</span>
             </li>
           ))}
         </ul>
