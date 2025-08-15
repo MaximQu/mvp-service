@@ -16,10 +16,6 @@ const navData = [
     scrollTo: "whyUs",
   },
   {
-    title: "Service Areas",
-    scrollTo: "serviceAreas",
-  },
-  {
     title: "Book Service",
     scrollTo: "bookService",
   },
@@ -27,26 +23,55 @@ const navData = [
 
 const Header = () => {
   return (
-    <header className="py-2 bg-blue-900 sticky top-0">
-      <div className="container px-4 mx-auto flex items-center justify-between gap-8">
-        <a className="w-32" href="#">
-          <img
-            src="https://rogaicopita.trafft.com/api/v1/public/media/a9a46b78-0230-4cac-bd56-5727044d0a69?size=medium-small"
-            alt="AppliFix"
-          />
-        </a>
-        <nav className=" hidden lg:block">
-          <ul className="flex gap-8">
+    <header className="sticky w-full top-0 z-10 bg-base-100 shadow-sm">
+      <div className="container navbar">
+        <nav className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            {
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                {navData.map(({ title, scrollTo }) => (
+                  <li key={title} className="capitalize text-xl">
+                    <a href={`#${scrollTo}`}> {title}</a>
+                  </li>
+                ))}
+              </ul>
+            }
+          </div>
+          <a href="/" className="btn-ghost font-medium text-xl">
+            AppliFix
+          </a>
+        </nav>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
             {navData.map(({ title, scrollTo }) => (
               <li key={title} className="capitalize text-xl">
                 <a href={`#${scrollTo}`}> {title}</a>
               </li>
             ))}
           </ul>
-        </nav>
-        <a href='#bookService' className="rounded-full text-center bg-blue-950 w-full max-w-30 p-2 text-md ">
-          Call us
-        </a>
+        </div>
+        <div className="navbar-end">
+          <a href="#bookService" className="btn btn-lg btn-primary rounded-full">Book service</a>
+        </div>
       </div>
     </header>
   );

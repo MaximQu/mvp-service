@@ -26,7 +26,7 @@ const Advantages = () => {
           {advantagesData.map(({ title, description }) => (
             <li
               key={title}
-              className="flex gap-4 bg-white text-black max-w-md w-full p-4 rounded-2xl"
+              className="flex gap-4 bg-white text-black max-w-md w-full p-4 rounded-lg"
             >
               <div className="">
                 <h3 className="mb-4 text-2xl font-medium">{title}</h3>
@@ -35,14 +35,9 @@ const Advantages = () => {
             </li>
           ))}
         </ul>
-        <div className="flex flex-wrap justify-center gap-4 uppercase">
-          <button className="rounded-full bg-blue-950 w-full sm:max-w-3xs p-4 text-2xl max-w-full">
-            Book service
-          </button>
-          <button className="rounded-full bg-blue-950 w-full sm:max-w-3xs p-4 text-2xl max-w-full">
-            Quick call
-          </button>
-        </div>
+        <button className="rounded-full btn btn-xl btn-primary mx-auto block w-full sm:max-w-3xs text-2xl max-w-full">
+          Book service
+        </button>
       </div>
     </section>
   );
