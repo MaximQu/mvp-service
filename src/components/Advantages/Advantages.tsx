@@ -35,9 +35,9 @@ const Advantages = () => {
             </li>
           ))}
         </ul>
-        <button className="rounded-full btn btn-xl btn-primary mx-auto block w-full sm:max-w-3xs text-2xl max-w-full">
+        <a href="#bookService" className="btn btn-xl btn-primary mx-auto block pt-2.5 text-xl sm:max-w-3xs w-full rounded-full">
           Book service
-        </button>
+        </a>
       </div>
     </section>
   );
