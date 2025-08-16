@@ -46,11 +46,11 @@ const Header = () => {
             {
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content left-0 bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
                 {navData.map(({ title, scrollTo }) => (
-                  <li key={title} className="capitalize text-xl">
-                    <a href={`#${scrollTo}`}> {title}</a>
+                  <li key={title} className="capitalize">
+                    <a href={`#${scrollTo}`} className="text-lg"> {title}</a>
                   </li>
                 ))}
               </ul>
@@ -64,7 +64,7 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1">
             {navData.map(({ title, scrollTo }) => (
               <li key={title} className="capitalize text-xl">
-                <a href={`#${scrollTo}`}> {title}</a>
+                <a href={`#${scrollTo}`}>{title}</a>
               </li>
             ))}
           </ul>
